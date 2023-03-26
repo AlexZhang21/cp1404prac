@@ -52,8 +52,10 @@ while choice != "Q":
         celsius = fahrenheit_to_celsius(fahrenheit)
         print(f"Result: {celsius:.2f} C")
     else:
+        #Invalid choice
         print("Invalid option")
 
+    #Display menu again
     print(MENU)
     choice = input(">>> ").upper()
 

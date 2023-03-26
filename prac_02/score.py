@@ -16,7 +16,7 @@ MAX = 100
 def main():
     score = float(input("Enter score: "))
     print(get_score(score))
-    # Random Result
+    # New - Random Result
     ran_score = random_score()
     print(f"Random number= {int(ran_score)} which is {get_score(ran_score)}")
 

@@ -24,6 +24,7 @@ def show_stars(score):
     print("*" * int(score))
 
 def main():
+    score = get_a_valid_score()
     choice = ""
     while choice != "Q":
         print("(G)et a valid score\n(P)rint result \n(S)how stars\n(Q)uit")

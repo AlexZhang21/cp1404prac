@@ -12,6 +12,7 @@ def get_password():
     # Ask for password with error-checking
     while True:
         password = input("Enter password: ")
+        # length of password is shorter than minimum length
         if len(password) < MIN_LENGTH:
             print("Password must be at least", MIN_LENGTH, "characters long.")
         else:
