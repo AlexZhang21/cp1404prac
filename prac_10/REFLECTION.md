@@ -1,4 +1,4 @@
-Reflection:
+# Reflection:
 Throughout this course, I have had the opportunity to engage in practical tasks and gain hands-on experience in various programming concepts and techniques. Reflecting on my journey, I would like to highlight two key areas of growth: accurate estimation of tasks and the value of code reviews.
 
 Estimates for Practical Tasks:
@@ -13,3 +13,11 @@ Conducting code reviews has also been enlightening.
 In conclusion, I have observed significant growth in my estimation skills and understanding of the value of code reviews throughout this course. Looking ahead, I intend to continue honing these skills and incorporating them into my future projects. I also believe that incorporating real-world scenarios and industry-standard tools and methodologies into practical tasks would greatly benefit students, bridging the gap between theoretical knowledge and practical application.
 
  you can find detailed information about the weekly practicals in the CP1404 Practicals repository.(https://github.com/AlexZhang21/cp1404prac)
+ 
+# Past PRs
+
+- https://github.com/AlexZhang21/cp1404prac/pull/2
+
+- https://github.com/AlexZhang21/cp1404prac/pull/5
+
+- https://github.com/AlexZhang21/cp1404prac/pull/4
