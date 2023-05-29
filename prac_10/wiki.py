@@ -1,21 +1,19 @@
 import wikipedia
 
 
-while True:
-    page_title = input("Enter a page title or search phrase (or blank to exit): ")
+def main():
+    search_term = input("Please enter a page title or search phrase (or just press Enter to quit): ")
+    while search_term:
+        try:
+            page = wikipedia.page(search_term, auto_suggest=False)
+            print("\nPage - Title: %s" % page.title)
+            print("Page - Summary: %s" % page.summary[0:60])
+            print("Page - URL: %s" % page.url)
+        except wikipedia.exceptions.DisambiguationError:
+            print("The page title resulted in multiple matches. Please try a different title.")
+        except wikipedia.exceptions.PageError:
+            print("The page does not exist. Please try again.")
+        search_term = input("Please enter a page title or search phrase (or just press Enter to quit): ")
 
-    if not page_title:
-        break
 
-    try:
-        page = wikipedia.page(title=page_title)
-    except wikipedia.exceptions.DisambiguationError as e:
-        print("Disambiguation Error: ", e.options)
-        continue
-    except wikipedia.exceptions.PageError as e:
-        print("Page Error: ", e)
-        continue
-
-    print("Title: %s" % page.title)
-    print("Summary: %s" % page.summary[0:60])
-    print("URL: %s" % page.url)
+main()
